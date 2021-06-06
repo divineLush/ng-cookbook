@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import Ingridient from '../shared/indrigient.model';
 
 @Component({
@@ -23,4 +24,7 @@ export class ShoppingListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onIngridientAdded(ingridient: Ingridient) {
+    this.ingridients.push(ingridient);
+  }
 }
